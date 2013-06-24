@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSGrid.Sample", "DSGrid.Sample\DSGrid.Sample.csproj", "{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Debug|iPhone.Build.0 = Debug|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Release|iPhone.ActiveCfg = Release|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Release|iPhone.Build.0 = Release|iPhone
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{776C8D26-06DB-4AF8-8DD3-D7C99037BE0A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DSGrid.Sample\DSGrid.Sample.csproj
+	EndGlobalSection
+EndGlobal

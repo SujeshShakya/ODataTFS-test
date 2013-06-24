@@ -1,0 +1,843 @@
+<doc>
+    <assembly>
+        <name>DSoft.Datatypes.Grid</name>
+    </assembly>
+    <members>
+        <member name="T:DSoft.Datatypes.Grid.Data.DSDataColumn">
+            <summary>DSDataColumn is a class to store the column definition information for a DSDataTable. </summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataColumn(System.String)">
+            <param name="columnName">The name/key of the column the object will represent</param>
+            <summary>Create a new object with the specified column name</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataColumn(System.String,System.Type)">
+            <param name="columnName">The name/key of the column the object will represent</param>
+            <param name="columnType">The .net type that the row value will be</param>
+            <summary>Create a new object with the column name and the object type specified</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.AllowSort">
+            <summary>Can the column be used to sort the data</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.Caption">
+            <summary>The value to be shown in the header of the DSGridView for the column</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.ColumnName">
+            <summary>Name of the column </summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.DataType">
+            <summary>The defined .net type of the column</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.IsSortColumn">
+            <summary>Is the column the current sorted column</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.ReadOnly">
+            <summary>Is the column readonly 
+
+<para>
+Note: This is currently ignored as the DSGridView is currently readonly.  
+</para></summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.DSDataColumn.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataColumn.UseDescendingSort">
+            <summary>Should the sorted column be 'descending' instead of 'ascending'</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Data.DSDataColumn.Width">
+            <summary>Set the width of the column
+
+
+<para>
+Note:  DSGridView will calculate the width of all the values in a column and work out a width to fit the content.  If this value is greater than the width property of the DSDataColumn then it will override it.
+</para></summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.DSDataRow">
+            <summary>DSDataRow is a class defintion for the row content of a DSDataTable</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataRow">
+            <summary>Create a new DataRow object.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.DSDataRow.Equals(System.Object)">
+            <param name="obj">A DSDataRow to compare against</param>
+            <summary>Used to compare two rows against each other</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataRow.Item(System.String)">
+            <param name="key">Name of the column to return or set the value  for</param>
+            <summary>Return the value for the column name</summary>
+            <value>The value can be any type of object.
+
+
+<para>
+Note: At the moment the datatype is not compared to the datatype set on the DSDataColumn object in the DSDataTable.  In the future this will be validated
+</para></value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataRow.Items">
+            <summary>Collection of all of the objects in the DSDataRow objects</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.DSDataSet">
+            <summary>DSDataSet is  a class defintion for storing mutiple instances of DSDataTable</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataSet">
+            <summary>Creates a new DSDataSet object</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataSet(System.Data.DataSet)">
+            <param name="ds">The System.Data.DataSet object to base the DSDataSet object on.
+
+<para>
+The columns and DataTable will be copied over to DSDataColumn and DSDataTable objects.
+</para></param>
+            <summary>Create a new DSDataSet from a standard .Net System.Data.DataSet object</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataSet(System.String)">
+            <param name="name">To be added.</param>
+            <summary>Create a new DSDataSet with the name specified</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataSet.Name">
+            <summary>The name of the DSDataSet</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataSet.Tables">
+            <summary>Collection of DSDataTable objects assigned to the DSDataSet object</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.DSDataTable">
+            <summary>DSDataTable is a class definition for defining columns and rows to store data.   It inherits from IDataSource and can be used as a datasource for a DSGridView control.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataTable">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataTable(System.Data.DataTable)">
+            <param name="dT">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.DSDataTable(System.String)">
+            <param name="name">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataTable.Columns">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataTable.Name">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.DSDataTable.Rows">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.DSDataTable.SortByColumn(System.Int32)">
+            <param name="ColumnIndex">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.Collections.DSDataColumnCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.Collections.DSDataColumnCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.Collections.DSDataColumnCollection.Add(DSoft.Datatypes.Grid.Data.DSDataColumn)">
+            <param name="dc">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.Collections.DSDataColumnCollection.Item(System.String)">
+            <param name="key">To be added.</param>
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.Collections.DSDataColumnCollection.ResetSortedColumn(DSoft.Datatypes.Grid.Data.DSDataColumn)">
+            <param name="dc">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.Collections.DSDataColumnCollection.SortColumn">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.Collections.DSDataRowCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.Collections.DSDataRowCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.Collections.DSDataRowCollection.Sort(DSoft.Datatypes.Grid.Data.DSDataColumn)">
+            <param name="Column">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.Collections.DSDataTableCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Data.Collections.DSDataTableCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.Datatypes.Grid.Data.Collections.DSDataTableCollection.Add(DSoft.Datatypes.Grid.Data.DSDataTable)">
+            <param name="dt">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Data.Collections.DSDataTableCollection.Item(System.String)">
+            <param name="key">To be added.</param>
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Data.Interfaces.IDSDataSource">
+            <summary>Interface to be implemented by datasource for the DSGridView</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Types.DSBitmap">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Types.DSBitmap">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Types.DSColor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Types.DSColor">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Types.DSColor(System.Single,System.Single,System.Single,System.Single)">
+            <param name="Red">To be added.</param>
+            <param name="Green">To be added.</param>
+            <param name="Blue">To be added.</param>
+            <param name="Alpha">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Types.DSColor.Alpha">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Types.DSColor.Blue">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Types.DSColor.Green">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Types.DSColor.Red">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Types.DSColor.RedColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Types.DSFont">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Types.DSFont">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.Datatypes.Grid.Types.DSFont(System.String,System.Single,DSoft.Datatypes.Grid.Types.FontWeight)">
+            <param name="FontFamily">To be added.</param>
+            <param name="FontSize">To be added.</param>
+            <param name="FontWeight">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Types.DSFont.FontFamily">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Types.DSFont.FontSize">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.Datatypes.Grid.Types.DSFont.FontWeight">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.Datatypes.Grid.Types.FontWeight">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Types.FontWeight.Bold">
+            <summary>To be added.</summary>
+        </member>
+        <member name="F:DSoft.Datatypes.Grid.Types.FontWeight.Normal">
+            <summary>To be added.</summary>
+        </member>
+        <member name="T:DSoft.UI.Grid.DSGridView">
+            <summary>The main DSGridView control</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.DSGridView">
+            <summary>Default constructor</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.DSGridView(System.IntPtr)">
+            <param name="handle">The handle of the object from the XIB</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridView.ClearViews">
+            <summary>Resets the views</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.DSGridView.DataSource">
+            <summary>Set the datasource for the GridView</summary>
+            <value>An object that implements IDSDataSource</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridView.Draw(System.Drawing.RectangleF)">
+            <param name="rect">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridView.LayoutSubviews">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:DSoft.UI.Grid.DSGridView.OnDoubleCellTap">
+            <summary>Called when a cell is double tapped</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:DSoft.UI.Grid.DSGridView.OnRowDoubleTapped">
+            <summary>Called when a row is double tapped</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:DSoft.UI.Grid.DSGridView.OnRowSelect">
+            <summary>Called when a row is selected</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:DSoft.UI.Grid.DSGridView.OnSingleCellTap">
+            <summary>Called when a cell is touched</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridView.ReloadData">
+            <summary>Reloads the data and rebuild the grid view</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.UI.Grid.DSGridView.ShowSelection">
+            <summary>Should the selection be highlighted</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.DSGridView.TableName">
+            <summary>Set the name of the DSDataTable to use if the datasource is a DSDataSet object</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.DSGridViewController">
+            <summary>View controller with included DSDataGridView</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.DSGridViewController">
+            <summary>Default constructor</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.DSGridViewController.DataSource">
+            <summary>Datasource for the DSDataGridView</summary>
+            <value>An object that implements IDSDataSource</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.DSGridViewController.EnableBounce">
+            <summary>Should the scroll view bounce</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.DSGridViewController.GridView">
+            <summary>The DSDataGridView object</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridViewController.OnDoubleCellTap(DSoft.UI.Grid.Views.DSGridCellView)">
+            <param name="sender">The cell view that was double tapped</param>
+            <summary>Called when a cell is double tapped</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridViewController.OnSingleCellTap(DSoft.UI.Grid.Views.DSGridCellView)">
+            <param name="sender">The cell view that was tapped</param>
+            <summary>Called when a cell is tapped</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.DSGridViewController.ShowSelection">
+            <summary>Should the selected row be highlighted</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridViewController.ViewDidAppear(System.Boolean)">
+            <param name="animated">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.DSGridViewController.ViewDidLoad">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Enums.BorderStyle">
+            <summary>Enumeration to define the border style to be used by the cells in the DSDataGridView</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.BorderStyle.Full">
+            <summary>Borders on all sides</summary>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.BorderStyle.HorizontalOnly">
+            <summary>Only horizontal borders</summary>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.BorderStyle.None">
+            <summary>No cell borders</summary>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.BorderStyle.VerticalOnly">
+            <summary>Only vertical borders</summary>
+        </member>
+        <member name="T:DSoft.UI.Grid.Enums.GridHeaderStyle">
+            <summary>Enumeration for define the display style of the Header view</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.GridHeaderStyle.Fixed">
+            <summary>The header is fixed and appears above the contents of the DSDataGridView.  Scrolls horizontally with the contents.</summary>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.GridHeaderStyle.None">
+            <summary>Do not show the header view</summary>
+        </member>
+        <member name="F:DSoft.UI.Grid.Enums.GridHeaderStyle.Standard">
+            <summary>Header view is included in the scrollable content of the DSDataGridView</summary>
+        </member>
+        <member name="T:DSoft.UI.Grid.Events.CellTappedHandlerDelegate">
+            <param name="sender">The sender will be the tapped cell itself</param>
+            <summary>Delegate is called when a cell is tapped in the DSDataGrid control.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Events.RowSelectedDelegate">
+            <param name="sender">sender is the row that was selected or double tapped</param>
+            <param name="Row">The DSDataRow object that relates to the selected or doubled tapped row</param>
+            <summary>Delegate is called when the row is selected or double tapped in the DSDataGridView control</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Extensions.TypeExtension">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Extensions.TypeExtension.ToDSColor(MonoTouch.UIKit.UIColor)">
+            <param name="aColor">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Extensions.TypeExtension.ToDSFont(MonoTouch.UIKit.UIFont)">
+            <param name="aFont">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Extensions.TypeExtension.ToUIColor(DSoft.Datatypes.Grid.Types.DSColor)">
+            <param name="aColor">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Extensions.TypeExtension.ToUIFont(DSoft.Datatypes.Grid.Types.DSFont)">
+            <param name="aFont">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme">
+            <summary>Default theme class for DSGridView
+
+<para>
+Note: You can sub-class this theme and make small changes one at a time
+</para></summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellBackgroundColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellBackgroundColor2">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellBorderColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellBorderStyle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellBorderWidth">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellFont">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellHighlightColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellTextAlignment">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellTextColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellTextColor2">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.CellTextHighlightColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.GridBackgroundColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.GridBorderColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.GridBorderWidth">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.HeaderCellTextAlignment">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.HeaderColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.HeaderFont">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.HeaderHeight">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.HeaderStyle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.HeaderTextColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.RowHeight">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.SortIndicatorDown">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.SortIndicatorUp">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Themes.DSGridViewDefaultTheme.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Themes.DSGridViewTheme">
+            <summary>Base abstract class for theming support in DSGridView
+
+
+<para>
+All theme show inherit from the is class
+</para></summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.Themes.DSGridViewTheme">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellBackgroundColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellBackgroundColor2">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellBorderColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellBorderStyle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellBorderWidth">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellFont">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellHighlightColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellTextAlignment">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellTextColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellTextColor2">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CellTextHighlightColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.CurrentTheme">
+            <summary>Singleton instance of the current theme object
+
+<para>
+Note: If not set it will default to DSGridViewDefaultTheme
+</para></summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.GridBackgroundColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.GridBorderColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.GridBorderWidth">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.HeaderCellTextAlignment">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.HeaderColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.HeaderFont">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.HeaderHeight">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.HeaderStyle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.HeaderTextColor">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.RowHeight">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.SortIndicatorDown">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Themes.DSGridViewTheme.SortIndicatorUp">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Views.DSGridCellView">
+            <summary>Column view for the DSDataGridView control</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.Views.DSGridCellView(DSoft.UI.Grid.DSGridView)">
+            <param name="aView">The DSDataGridView object to contain the column</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Views.DSGridCellView.Draw(System.Drawing.RectangleF)">
+            <param name="rect">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Views.DSGridCellView.ToString">
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Views.DSGridCellView.TouchesBegan(MonoTouch.Foundation.NSSet,MonoTouch.UIKit.UIEvent)">
+            <param name="touches">To be added.</param>
+            <param name="evt">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Views.DSGridCellView.Value">
+            <summary>The value assigned to the CellView</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Views.DSGridCellView.X">
+            <summary>The column index of the DSGridCellView</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Views.DSGridCellView.Y">
+            <summary>The row index of the DSGridCellView</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Views.DSGridRowView">
+            <summary>View to represent a row in the DSDataGridView control</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:DSoft.UI.Grid.Views.DSGridRowView.Draw(System.Drawing.RectangleF)">
+            <param name="rect">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Views.DSGridRowView.RowIndex">
+            <summary>Index of the row within the DSDataGridView</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:DSoft.UI.Grid.Views.Collections.DSGridCellViewCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:DSoft.UI.Grid.Views.Collections.DSGridCellViewCollection">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Views.Collections.DSGridCellViewCollection.Item(System.Int32)">
+            <param name="Index">To be added.</param>
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:DSoft.UI.Grid.Views.Collections.DSGridCellViewCollection.Item(System.String)">
+            <param name="ColumnName">To be added.</param>
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+    </members>
+</doc>
