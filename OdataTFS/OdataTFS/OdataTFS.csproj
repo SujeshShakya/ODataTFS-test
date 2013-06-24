@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A4C0231-3D5B-49EE-8DAC-A51DE322299F}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OdataTFS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>OdataTFS</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <IpaMetadata />
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer: UBA Solutions (357Q538T9W)</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>97C64E55-57FF-4A7B-9618-5EFE0EE2B810</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>68838330-2B04-459E-87D9-2BB333495DF7</CodesignProvision>
+    <IpaPackageName />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BuildIpa>true</BuildIpa>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>C747D60F-5E5B-4156-A188-42D22EEBBA53</CodesignProvision>
+    <CodesignKey>iPhone Distribution: UBA Solutions (6NX4JK594X)</CodesignKey>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>Libraries\RestSharp.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="AlertView">
+      <HintPath>Libraries\AlertView.dll</HintPath>
+    </Reference>
+    <Reference Include="DSoft.Datatypes.Grid">
+      <HintPath>..\Components\dsgridview-1.1-trial\lib\ios\DSoft.Datatypes.Grid.dll</HintPath>
+    </Reference>
+    <Reference Include="DSoft.Datatypes">
+      <HintPath>..\Components\dsgridview-1.1-trial\lib\ios\DSoft.Datatypes.dll</HintPath>
+    </Reference>
+    <Reference Include="DSoft.UI.Grid">
+      <HintPath>..\Components\dsgridview-1.1-trial\lib\ios\DSoft.UI.Grid.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <Compile Include="ChangeSets.cs" />
+    <Compile Include="ChangeSetViewController.cs" />
+    <Compile Include="DescriptionView.cs" />
+    <Compile Include="LoadingOverLay.cs" />
+    <Compile Include="SprintListController.cs" />
+    <Compile Include="SimpleCollectionView.cs">
+      <DependentUpon>SplitViewContoller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamMemberCollection.cs" />
+    <Compile Include="TeamMember.cs" />
+    <Compile Include="TeamMemberShow.cs">
+      <DependentUpon>OdataTFSViewController_iPhone.xib</DependentUpon>
+    </Compile>
+    <Compile Include="AddProjectController.cs" />
+    <Compile Include="DetailViewController.cs" />
+    <Compile Include="MasterViewController.cs" />
+    <Compile Include="SplitViewContoller.cs" />
+    <Compile Include="IProject.cs" />
+    <Compile Include="ProductBackLogController.cs" />
+    <Compile Include="BoardViewController.cs" />
+    <Compile Include="BoardController.cs" />
+    <Compile Include="ProjectCollectionController.cs" />
+    <Compile Include="ServerList.cs" />
+    <Compile Include="AGridView.cs" />
+    <Compile Include="Data\ExampleDataTable.cs" />
+    <Compile Include="Data\ExampleDataSet.cs" />
+    <Compile Include="Data\ExampleDataTable2.cs" />
+    <Compile Include="ProductBackController.cs" />
+    <Compile Include="ProductBackController.designer.cs">
+      <DependentUpon>ProductBackController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DescriptionController.cs" />
+    <Compile Include="LoginModel.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="OdataTFSViewController.cs" />
+    <Compile Include="OdataTFSViewController.designer.cs">
+      <DependentUpon>OdataTFSViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Projects.cs" />
+    <Compile Include="WorkItems.cs" />
+    <Compile Include="WorkItemViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="OdataTFSViewController_iPhone.xib" />
+    <InterfaceDefinition Include="OdataTFSViewController_iPad.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\blue-wood-pattern.jpg" />
+    <BundleResource Include="Images\Post-it-note-transparent.png" />
+    <BundleResource Include="Images\Clipboard.png" />
+    <BundleResource Include="Images\sricky.png" />
+    <BundleResource Include="Images\images.jpeg" />
+    <BundleResource Include="Images\images %281%29.jpeg" />
+    <BundleResource Include="Images\teamCollection.jpeg" />
+    <BundleResource Include="Images\sprintList.png" />
+    <BundleResource Include="Images\sticky-note %281%29.png" />
+    <BundleResource Include="Images\boardimg.png" />
+    <BundleResource Include="Images\ProjectCollections.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Images\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="dsgridview-trial">
+      <InstallationInProgress>False</InstallationInProgress>
+      <Version>1.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

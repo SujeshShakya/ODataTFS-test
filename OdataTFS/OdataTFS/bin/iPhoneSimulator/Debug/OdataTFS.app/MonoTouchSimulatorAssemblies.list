@@ -1,0 +1,16 @@
+AlertView.dll
+DSoft.Datatypes.Grid.dll
+DSoft.Datatypes.dll
+DSoft.UI.Grid.dll
+Mono.Data.Tds.dll
+Mono.Security.dll
+MonoTouch.Dialog-1.dll
+RestSharp.MonoTouch.dll
+System.Core.dll
+System.Data.dll
+System.Json.dll
+System.Transactions.dll
+System.Xml.Linq.dll
+System.Xml.dll
+System.dll
+mscorlib.dll

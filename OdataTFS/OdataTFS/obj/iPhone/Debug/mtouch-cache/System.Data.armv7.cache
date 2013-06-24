@@ -1,0 +1,1 @@
+--debug --aot=mtriple=armv7-darwin,full,static,asmonly,direct-icalls,no-direct-calls,iphone-abi,outfile=/System.Data.dll.armv7.s "/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/bin/iPhone/Debug/OdataTFS.app/System.Data.dll"

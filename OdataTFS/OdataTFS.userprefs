@@ -1,0 +1,44 @@
+﻿<Properties GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Ad-Hoc|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OdataTFS/DescriptionController.cs">
+    <Files>
+      <File FileName="OdataTFS/DescriptionView.cs" Line="1" Column="1" />
+      <File FileName="OdataTFS/SprintListController.cs" Line="1" Column="1" />
+      <File FileName="OdataTFS/DescriptionController.cs" Line="15" Column="41" />
+      <File FileName="../../../DescriptionView.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="OdataTFS" expanded="True" selected="True">
+            <Node name="OdataTFSViewController.cs" expanded="True" />
+            <Node name="ProductBackController.cs" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/OdataTFSViewController.cs" line="69" column="1" />
+      <Breakpoint file="/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/ProductBackController.cs" line="666" column="1" />
+      <Breakpoint file="/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/ProductBackController.cs" line="696" column="1" />
+      <Breakpoint file="/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/ProductBackController.cs" line="789" column="1" />
+      <Breakpoint file="/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/SprintListController.cs" line="173" column="1" />
+      <Breakpoint file="/Users/sujesh/Desktop/Mobile TFS1/mtfs/OdataTFS/OdataTFS/DescriptionView.cs" line="120" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="OdataTFS/DetailViewController.cs" line="69" offsetX="325" offsetY="1020" expression="prView" liveUpdate="False" />
+    <Watch file="OdataTFS/Main.cs" line="17" offsetX="484" offsetY="240" expression="args" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.ItemProperties.OdataTFS>
+    <IPhoneTestFlightSettings_27CAd-Hoc ApiToken="d21e299565cbcc3248b0ae8c033221e5_MTAzOTUyODIwMTMtMDUtMTAgMDI6MDI6MDMuNjkyNTI3" TeamToken="897ea5259f9dbfb824af77c21d7931ed_MjIxOTE3MjAxMy0wNS0xMCAwMjowNzoxMC4wNjMwOTE" ReleaseNotes="Mobile TFS Release with Grid view and Board views" NotifyTeamMembers="True" ReplaceBinaries="False" UploadDSYMs="False" DistributionLists="Mobile TFS Test Team" />
+  </MonoDevelop.Ide.ItemProperties.OdataTFS>
+</Properties>
